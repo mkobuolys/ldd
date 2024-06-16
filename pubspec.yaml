@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_deck: ^0.14.0
+  rive: ^0.13.7
 
 dev_dependencies:
   flutter_test:
@@ -21,3 +22,4 @@ flutter:
 
   assets:
     - assets/
+    - assets/rive/
