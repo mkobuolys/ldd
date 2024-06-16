@@ -4,7 +4,7 @@ import 'package:flutter_deck/flutter_deck.dart';
 const _speakerNotes = '''
 - Beautiful UI
 - High-quality code
-- Development velocity
+- Fast product development
 
 Pick two
 ''';
@@ -42,7 +42,7 @@ class _SwitchesState extends State<_Switches> {
   Widget build(BuildContext context) {
     return Center(
       child: FractionallySizedBox(
-        widthFactor: 0.75,
+        widthFactor: 0.9,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -71,7 +71,7 @@ class _SwitchesState extends State<_Switches> {
             ),
             const SizedBox(height: 100),
             _Switch(
-              label: 'Development velocity',
+              label: 'Fast product development',
               value: _developmentVelocityEnabled,
               onChanged: (value) => setState(() {
                 _developmentVelocityEnabled = value;
