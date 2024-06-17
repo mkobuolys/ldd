@@ -1,19 +1,18 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class QualitySectionSlide extends FlutterDeckSlideWidget {
-  const QualitySectionSlide()
+class UnicornDeveloperSlide extends FlutterDeckSlideWidget {
+  const UnicornDeveloperSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
-            route: '/quality-section',
+            route: '/unicorn-developer',
           ),
         );
 
   @override
   FlutterDeckSlide build(BuildContext context) {
-    return FlutterDeckSlide.bigFact(
-      title: 'High-quality code*',
-      subtitle: '*but corrupts app state by design',
+    return FlutterDeckSlide.image(
+      imageBuilder: (context) => Image.asset('assets/unicorn-developer.png'),
     );
   }
 }

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
-import 'package:ldd/slides/app_qualities_slide.dart';
+import 'package:ldd/slides/cat_developer_qualities_slide.dart';
+import 'package:ldd/slides/unicorn_developer_qualities_slide.dart';
 import 'package:ldd/slides/beautiful/beautiful.dart';
+import 'package:ldd/slides/cat_developer_slide.dart';
 import 'package:ldd/slides/fast/fast.dart';
 import 'package:ldd/slides/feedback_slide.dart';
 import 'package:ldd/slides/laziness_driven_development_slide.dart';
@@ -10,6 +12,7 @@ import 'package:ldd/slides/quality/quality.dart';
 import 'package:ldd/slides/summary_slide.dart';
 import 'package:ldd/slides/thank_you_slide.dart';
 import 'package:ldd/slides/title_slide.dart';
+import 'package:ldd/slides/unicorn_developer_slide.dart';
 
 void main() {
   runApp(const _FlutterDeck());
@@ -33,8 +36,11 @@ class _FlutterDeck extends StatelessWidget {
       ),
       slides: const [
         TitleSlide(),
-        AppQualitiesSlide(),
+        UnicornDeveloperSlide(),
+        UnicornDeveloperQualitiesSlide(),
+        CatDeveloperSlide(),
         LazinessDrivenDevelopmentSlide(),
+        CatDeveloperQualitiesSlide(),
         ...beautifulSectionSlides,
         ...qualitySectionSlides,
         ...fastSectionSlides,

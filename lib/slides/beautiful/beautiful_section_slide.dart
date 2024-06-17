@@ -12,7 +12,8 @@ class BeautifulSectionSlide extends FlutterDeckSlideWidget {
   @override
   FlutterDeckSlide build(BuildContext context) {
     return FlutterDeckSlide.bigFact(
-      title: 'Beautiful UI',
+      title: 'Beautiful UI*',
+      subtitle: "*but you can't change it",
     );
   }
 }

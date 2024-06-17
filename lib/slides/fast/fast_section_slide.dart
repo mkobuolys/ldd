@@ -12,7 +12,8 @@ class FastSectionSlide extends FlutterDeckSlideWidget {
   @override
   FlutterDeckSlide build(BuildContext context) {
     return FlutterDeckSlide.bigFact(
-      title: 'Development velocity',
+      title: 'Fast product development*',
+      subtitle: '*but sometimes confuses users',
     );
   }
 }
