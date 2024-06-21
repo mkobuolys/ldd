@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 import 'package:ldd/slides/cat_developer_qualities_slide.dart';
+import 'package:ldd/slides/presentation_content_warning_slide.dart';
 import 'package:ldd/slides/unicorn_developer_qualities_slide.dart';
 import 'package:ldd/slides/beautiful/beautiful.dart';
 import 'package:ldd/slides/cat_developer_slide.dart';
@@ -36,6 +37,7 @@ class _FlutterDeck extends StatelessWidget {
       ),
       slides: [
         const TitleSlide(),
+        const PresentationContentWarningSlide(),
         const UnicornDeveloperSlide(),
         const UnicornDeveloperQualitiesSlide(),
         const CatDeveloperSlide(),

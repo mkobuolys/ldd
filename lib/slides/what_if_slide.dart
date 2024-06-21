@@ -15,7 +15,6 @@ class WhatIfSlide extends FlutterDeckSlideWidget {
       builder: (context) => Stack(
         children: [
           Image.asset('assets/hehe-cat.png', width: 400),
-          const SizedBox(height: 32),
           Center(
             child: Text(
               'What if...?',

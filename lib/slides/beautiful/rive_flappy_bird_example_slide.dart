@@ -47,7 +47,7 @@ class _GameViewState extends State<_GameView> {
 
   @override
   Widget build(BuildContext context) {
-    final style = FlutterDeckTheme.of(context).textTheme.title;
+    final textStyle = FlutterDeckTheme.of(context).textTheme.title;
 
     return Row(
       children: [
@@ -67,8 +67,8 @@ class _GameViewState extends State<_GameView> {
           flex: 2,
           child: Center(
             child: ElevatedButton.icon(
-              icon: Icon(Icons.refresh, size: style.fontSize),
-              label: Text('Restart', style: style),
+              icon: Icon(Icons.refresh, size: textStyle.fontSize),
+              label: Text('Restart', style: textStyle),
               onPressed: _onRestart,
             ),
           ),
