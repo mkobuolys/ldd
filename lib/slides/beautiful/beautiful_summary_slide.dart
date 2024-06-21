@@ -1,11 +1,11 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class BeautifulUiSummarySlide extends FlutterDeckSlideWidget {
-  const BeautifulUiSummarySlide()
+class BeautifulSummarySlide extends FlutterDeckSlideWidget {
+  const BeautifulSummarySlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
-            route: '/beautiful-ui-summary',
+            route: '/beautiful-summary',
             header: FlutterDeckHeaderConfiguration(title: 'Beautiful UI* 🐱'),
           ),
         );
