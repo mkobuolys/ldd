@@ -49,6 +49,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.18.0"
+  cupertino_icons:
+    dependency: transitive
+    description:
+      name: cupertino_icons
+      sha256: ba631d1c7f7bef6b729a622b7b752645a2d076dba9976925b8f25725a30e1ee6
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.8"
   device_frame:
     dependency: transitive
     description:
@@ -94,6 +102,22 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_animate:
+    dependency: transitive
+    description:
+      name: flutter_animate
+      sha256: "7c8a6594a9252dad30cc2ef16e33270b6248c4dedc3b3d06c86c4f3f4dc05ae5"
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.5.0"
+  flutter_custom_carousel:
+    dependency: transitive
+    description:
+      name: flutter_custom_carousel
+      sha256: f5e09ea7c300dfa02210abb845d7bb2df01200a1e24040daf29ae5895ab46692
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.1.0+1"
   flutter_deck:
     dependency: "direct main"
     description:
@@ -131,6 +155,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_shaders:
+    dependency: transitive
+    description:
+      name: flutter_shaders
+      sha256: "02750b545c01ff4d8e9bbe8f27a7731aa3778402506c67daa1de7f5fc3f4befe"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.1.2"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -165,6 +197,13 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.3.1"
+  gskinner_example:
+    dependency: "direct main"
+    description:
+      path: "packages/gskinner_example"
+      relative: true
+    source: path
+    version: "1.0.0+1"
   highlight:
     dependency: transitive
     description:

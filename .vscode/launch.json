@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "ldd",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "ldd (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "ldd (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "gskinner_example",
+            "cwd": "packages/gskinner_example",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "gskinner_example (profile mode)",
+            "cwd": "packages/gskinner_example",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "gskinner_example (release mode)",
+            "cwd": "packages/gskinner_example",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}

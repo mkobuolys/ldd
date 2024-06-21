@@ -12,6 +12,8 @@ dependencies:
     sdk: flutter
   flutter_deck: ^0.14.0
   rive: ^0.13.7
+  gskinner_example:
+    path: packages/gskinner_example
 
 dev_dependencies:
   flutter_test:
