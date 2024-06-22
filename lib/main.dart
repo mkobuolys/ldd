@@ -1,3 +1,6 @@
+import 'dart:async';
+
+import 'package:expression_ui_example/expression_ui_example.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 import 'package:ldd/slides/cat_developer_qualities_slide.dart';
@@ -19,8 +22,20 @@ void main() {
   runApp(const _FlutterDeck());
 }
 
-class _FlutterDeck extends StatelessWidget {
+class _FlutterDeck extends StatefulWidget {
   const _FlutterDeck();
+
+  @override
+  State<_FlutterDeck> createState() => _FlutterDeckState();
+}
+
+class _FlutterDeckState extends State<_FlutterDeck> {
+  @override
+  void initState() {
+    super.initState();
+
+    unawaited(_setupExpressionUIExample());
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -59,4 +74,11 @@ class _FlutterDeck extends StatelessWidget {
       ),
     );
   }
+}
+
+Future<void> _setupExpressionUIExample() async {
+  await setupLocator();
+
+  setupDialogUi();
+  setupBottomSheetUi();
 }

@@ -1,3 +1,5 @@
+import 'package:device_preview/device_preview.dart';
+import 'package:expression_ui_example/expression_ui_example.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
@@ -6,14 +8,41 @@ class ExpressionUiSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/expression-ui',
-            header: FlutterDeckHeaderConfiguration(title: 'ExpressionUI'),
+            header: FlutterDeckHeaderConfiguration(
+              title: 'ExpressionUI by @DaneMackier (FilledStacks)',
+            ),
           ),
         );
 
   @override
   FlutterDeckSlide build(BuildContext context) {
+    final textStyle = FlutterDeckTheme.of(context).textTheme.title;
+
     return FlutterDeckSlide.blank(
-      builder: (context) => const Placeholder(),
+      builder: (context) => Row(
+        children: [
+          Expanded(
+            flex: 3,
+            child: DeviceFrame(
+              device: Devices.ios.iPhone13,
+              screen: const ExpressionUIExampleApp(),
+            ),
+          ),
+          Expanded(
+            flex: 2,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text('\u2022 a', style: textStyle),
+                Text('\u2022 b', style: textStyle),
+                Text('\u2022 c', style: textStyle),
+                Text('\u2022 ...', style: textStyle),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

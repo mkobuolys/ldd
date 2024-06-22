@@ -8,12 +8,14 @@ environment:
 
 dependencies:
   device_preview: ^1.2.0
+  expression_ui_example:
+    path: packages/expression_ui_example
   flutter:
     sdk: flutter
   flutter_deck: ^0.14.0
-  rive: ^0.13.7
   gskinner_example:
     path: packages/gskinner_example
+  rive: ^0.13.7
 
 dev_dependencies:
   flutter_test:

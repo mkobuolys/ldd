@@ -1,0 +1,20 @@
+name: expression_ui
+description: "A UI framework that allows you to build UI on a canvas and render as-is in your app"
+version: 0.3.0
+homepage: https://github.com/FilledStacks/expression-ui
+
+environment:
+  sdk: '>=3.3.3 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  rive: ^0.13.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
