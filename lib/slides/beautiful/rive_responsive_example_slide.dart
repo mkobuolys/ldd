@@ -91,6 +91,7 @@ class _ResponsiveViewState extends State<_ResponsiveView>
               child: RiveAnimation.asset(
                 'assets/rive/responsive-website.riv',
                 artboard: 'website',
+                placeHolder: const CircularProgressIndicator.adaptive(),
                 onInit: _onRiveInit,
               ),
             ),

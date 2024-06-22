@@ -59,6 +59,7 @@ class _GameViewState extends State<_GameView> {
               key: _key,
               'assets/rive/flappy-bird.riv',
               artboard: '3',
+              placeHolder: const CircularProgressIndicator.adaptive(),
               onInit: _onRiveInit,
             ),
           ),

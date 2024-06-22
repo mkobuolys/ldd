@@ -59,6 +59,7 @@ class BaseExpressionView extends StatelessWidget {
       artboard: artboardName,
       useArtboardSize: useArtboardSize || scrollable,
       fit: fit,
+      placeHolder: const CircularProgressIndicator.adaptive(),
       onInit: (artboard) => onRiveFileInitialized(artboard, context),
     );
 
