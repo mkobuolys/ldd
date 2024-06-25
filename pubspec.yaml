@@ -7,11 +7,14 @@ environment:
   sdk: ">=3.4.3 <4.0.0"
 
 dependencies:
+  confetti: ^0.7.0
   device_preview: ^1.2.0
+  equatable: ^2.0.5
   expression_ui_example:
     path: packages/expression_ui_example
   flutter:
     sdk: flutter
+  flutter_bloc: ^8.1.6
   flutter_deck: ^0.14.0
   gskinner_example:
     path: packages/gskinner_example
