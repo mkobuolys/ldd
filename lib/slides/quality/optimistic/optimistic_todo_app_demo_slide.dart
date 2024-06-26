@@ -27,9 +27,9 @@ class _DemoView extends StatefulWidget {
 }
 
 class _DemoViewState extends State<_DemoView> {
-  var _noConnection = false;
+  var _online = true;
 
-  void _toggleConnection(bool value) => setState(() => _noConnection = value);
+  void _toggleOnline(bool value) => setState(() => _online = value);
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +39,7 @@ class _DemoViewState extends State<_DemoView> {
           flex: 3,
           child: _TodoApp(
             header: 'Basic',
-            noConnection: _noConnection,
+            noConnection: !_online,
             useOptimisticStateManagement: false,
           ),
         ),
@@ -48,7 +48,7 @@ class _DemoViewState extends State<_DemoView> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                _noConnection ? 'Offline' : 'Online',
+                _online ? 'Online' : 'Offline',
                 style: FlutterDeckTheme.of(context).textTheme.title,
               ),
               SizedBox(
@@ -56,8 +56,8 @@ class _DemoViewState extends State<_DemoView> {
                 child: FittedBox(
                   fit: BoxFit.fill,
                   child: Switch.adaptive(
-                    value: _noConnection,
-                    onChanged: _toggleConnection,
+                    value: _online,
+                    onChanged: _toggleOnline,
                   ),
                 ),
               ),
@@ -68,7 +68,7 @@ class _DemoViewState extends State<_DemoView> {
           flex: 3,
           child: _TodoApp(
             header: 'Optimistic',
-            noConnection: _noConnection,
+            noConnection: !_online,
             useOptimisticStateManagement: true,
           ),
         ),
