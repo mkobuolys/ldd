@@ -18,6 +18,8 @@ dependencies:
   flutter_deck: ^0.14.0
   gskinner_example:
     path: packages/gskinner_example
+  optimistic_todo_app:
+    path: packages/optimistic_todo_app
   rive: ^0.13.7
 
 dev_dependencies:

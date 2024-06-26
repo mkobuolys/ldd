@@ -15,6 +15,7 @@ final qualitySectionSlides = [
   WhatIfSlide('quality'),
   const OptimisticStateManagementSlide(),
   const OptimisticStateDemoSlide(),
+  const OptimisticTodoAppDemoSlide(),
   const ReactUseOptimisticSlide(),
   const QualitySummarySlide(),
 ];
