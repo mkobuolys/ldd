@@ -13,7 +13,7 @@ class FastSectionSlide extends FlutterDeckSlideWidget {
   FlutterDeckSlide build(BuildContext context) {
     return FlutterDeckSlide.bigFact(
       title: 'Fast product development*',
-      subtitle: '*but sometimes confuses users',
+      subtitle: '*but users may be confused',
     );
   }
 }

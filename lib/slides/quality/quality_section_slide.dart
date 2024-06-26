@@ -13,7 +13,7 @@ class QualitySectionSlide extends FlutterDeckSlideWidget {
   FlutterDeckSlide build(BuildContext context) {
     return FlutterDeckSlide.bigFact(
       title: 'High-quality code*',
-      subtitle: '*but corrupts app state by design',
+      subtitle: '*but works only >99% of the time',
     );
   }
 }

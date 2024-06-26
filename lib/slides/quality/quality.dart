@@ -16,6 +16,7 @@ final qualitySectionSlides = [
   const OptimisticStateManagementSlide(),
   const OptimisticStateDemoSlide(),
   const OptimisticTodoAppDemoSlide(),
+  const TodoAppCodeSlide(),
   const ReactUseOptimisticSlide(),
   const QualitySummarySlide(),
 ];
