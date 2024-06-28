@@ -176,10 +176,10 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_deck
-      sha256: "9fa10f83a50eed198cc4d69505c65d0876afe464a526737ab06799237c1d48f4"
+      sha256: "3023a0dd034a37b1601d64a3f036baa9ebb5ecbd03cdb99aadd7d67192bc5d1b"
       url: "https://pub.dev"
     source: hosted
-    version: "0.14.0"
+    version: "0.15.0"
   flutter_deck_client:
     dependency: transitive
     description:
