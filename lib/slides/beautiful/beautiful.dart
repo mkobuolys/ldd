@@ -1,5 +1,3 @@
-import 'package:ldd/slides/beautiful/rive_responsive_example_code_slide.dart';
-
 import '../what_if_slide.dart';
 import 'app_development_flow_rive_slide.dart';
 import 'app_development_flow_slide.dart';
@@ -9,6 +7,7 @@ import 'expression_ui_slide.dart';
 import 'gskinner_slide.dart';
 import 'rive_flappy_bird_example_slide.dart';
 import 'rive_intro_slide.dart';
+import 'rive_responsive_example_code_slide.dart';
 import 'rive_responsive_example_slide.dart';
 
 final beautifulSectionSlides = [
