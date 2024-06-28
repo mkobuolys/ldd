@@ -52,7 +52,6 @@ class _GameViewState extends State<_GameView> {
     return Row(
       children: [
         Expanded(
-          flex: 3,
           child: DeviceFrame(
             device: Devices.ios.iPhone13,
             screen: RiveAnimation.asset(
@@ -65,16 +64,51 @@ class _GameViewState extends State<_GameView> {
           ),
         ),
         Expanded(
-          flex: 2,
-          child: Center(
-            child: ElevatedButton.icon(
-              icon: Icon(Icons.refresh, size: textStyle.fontSize),
-              label: Text('Restart', style: textStyle),
-              onPressed: _onRestart,
-            ),
+          child: Column(
+            children: [
+              Center(
+                child: ElevatedButton.icon(
+                  icon: Icon(Icons.refresh, size: textStyle.fontSize),
+                  label: Text('Restart', style: textStyle),
+                  onPressed: _onRestart,
+                ),
+              ),
+              const SizedBox(height: 16),
+              Expanded(child: Image.asset('assets/flappy-bird-code.png')),
+            ],
           ),
         )
       ],
+    );
+  }
+}
+
+class _FlappyBird extends StatefulWidget {
+  const _FlappyBird();
+
+  @override
+  State<_FlappyBird> createState() => _FlappyBirdState();
+}
+
+class _FlappyBirdState extends State<_FlappyBird> {
+  void _onRiveInit(Artboard artboard) {
+    final controller = StateMachineController.fromArtboard(
+      artboard,
+      'State Machine 1',
+    );
+
+    if (controller == null) return;
+
+    artboard.addController(controller);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return RiveAnimation.asset(
+      'assets/rive/flappy-bird.riv',
+      artboard: '3',
+      placeHolder: const CircularProgressIndicator.adaptive(),
+      onInit: _onRiveInit,
     );
   }
 }

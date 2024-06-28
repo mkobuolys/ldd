@@ -55,7 +55,7 @@ class _FavoriteButtonDemo extends StatelessWidget {
               Expanded(
                 flex: 3,
                 child: Image.asset(
-                  'assets/basic_favorite_button_cubit.png',
+                  'assets/basic-favorite-button-cubit.png',
                 ),
               ),
             ],
@@ -72,7 +72,7 @@ class _FavoriteButtonDemo extends StatelessWidget {
               Expanded(
                 flex: 3,
                 child: Image.asset(
-                  'assets/optimistic_favorite_button_cubit.png',
+                  'assets/optimistic-favorite-button-cubit.png',
                 ),
               ),
             ],

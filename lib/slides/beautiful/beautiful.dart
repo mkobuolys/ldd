@@ -1,3 +1,5 @@
+import 'package:ldd/slides/beautiful/rive_responsive_example_code_slide.dart';
+
 import '../what_if_slide.dart';
 import 'app_development_flow_rive_slide.dart';
 import 'app_development_flow_slide.dart';
@@ -17,6 +19,7 @@ final beautifulSectionSlides = [
   const AppDevelopmentFlowRiveSlide(),
   const RiveIntroSlide(),
   const RiveResponsiveExampleSlide(),
+  const RiveResponsiveExampleCodeSlide(),
   const RiveFlappyBirdExampleSlide(),
   const ExpressionUiSlide(),
   const BeautifulSummarySlide(),

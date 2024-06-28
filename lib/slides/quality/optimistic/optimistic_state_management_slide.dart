@@ -13,7 +13,7 @@ class OptimisticStateManagementSlide extends FlutterDeckSlideWidget {
   FlutterDeckSlide build(BuildContext context) {
     return FlutterDeckSlide.image(
       imageBuilder: (context) => Image.asset(
-        'assets/state_management_optimistic.png',
+        'assets/state-management-optimistic.png',
       ),
     );
   }

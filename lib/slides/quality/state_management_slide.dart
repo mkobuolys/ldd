@@ -21,7 +21,7 @@ class StateManagementSlide extends FlutterDeckSlideWidget {
               style: FlutterDeckTheme.of(context).textTheme.header,
             ),
             const SizedBox(height: 32),
-            Image.asset('assets/bad_at_math.png'),
+            Image.asset('assets/bad-at-math.png'),
             const SizedBox(height: 16),
             Text(
               '(1949, colorized)',

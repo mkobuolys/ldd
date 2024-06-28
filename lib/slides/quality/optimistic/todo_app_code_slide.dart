@@ -14,9 +14,9 @@ class TodoAppCodeSlide extends FlutterDeckSlideWidget {
     return FlutterDeckSlide.blank(
       builder: (context) => Row(
         children: [
-          Expanded(child: Image.asset('assets/basic_todo_cubit.png')),
+          Expanded(child: Image.asset('assets/basic-todo-cubit.png')),
           const SizedBox(width: 16),
-          Expanded(child: Image.asset('assets/optimistic_todo_cubit.png')),
+          Expanded(child: Image.asset('assets/optimistic-todo-cubit.png')),
         ],
       ),
     );

@@ -12,7 +12,7 @@ class ReactUseOptimisticSlide extends FlutterDeckSlideWidget {
   @override
   FlutterDeckSlide build(BuildContext context) {
     return FlutterDeckSlide.image(
-      imageBuilder: (context) => Image.asset('assets/react_use_optimistic.png'),
+      imageBuilder: (context) => Image.asset('assets/react-use-optimistic.png'),
       label: 'https://react.dev/reference/react/useOptimistic',
     );
   }
