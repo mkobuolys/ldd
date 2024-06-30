@@ -22,11 +22,6 @@ class StateManagementSlide extends FlutterDeckSlideWidget {
             ),
             const SizedBox(height: 32),
             Image.asset('assets/bad-at-math.png'),
-            const SizedBox(height: 16),
-            Text(
-              '(1949, colorized)',
-              style: FlutterDeckTheme.of(context).textTheme.bodyLarge,
-            ),
           ],
         ),
       ),

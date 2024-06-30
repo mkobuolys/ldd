@@ -37,12 +37,14 @@ class SignInWithAppleProblemSlide extends FlutterDeckSlideWidget {
               ],
             ),
           ),
+          const SizedBox(width: 16),
           Center(
             child: Text(
               '→',
               style: FlutterDeckTheme.of(context).textTheme.display,
             ),
           ),
+          const SizedBox(width: 16),
           Expanded(
             child: Column(
               children: [

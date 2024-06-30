@@ -15,7 +15,7 @@ class UnicornDeveloperQualitiesSlide extends FlutterDeckSlideWidget {
           configuration: const FlutterDeckSlideConfiguration(
             route: '/unicorn-developer-qualities',
             speakerNotes: _speakerNotes,
-            steps: 6,
+            steps: 4,
           ),
         );
 
@@ -35,8 +35,8 @@ class _Switches extends StatefulWidget {
 }
 
 class _SwitchesState extends State<_Switches> {
-  var _beautifulUiEnabled = false;
-  var _highQualityCodeEnabled = false;
+  var _beautifulUiEnabled = true;
+  var _highQualityCodeEnabled = true;
   var _developmentVelocityEnabled = false;
 
   @override
@@ -47,27 +47,11 @@ class _SwitchesState extends State<_Switches> {
           setState(() {
             _beautifulUiEnabled = true;
             _highQualityCodeEnabled = false;
-            _developmentVelocityEnabled = false;
-          });
-        }
-
-        if (stepNumber == 3) {
-          setState(() {
-            _beautifulUiEnabled = true;
-            _highQualityCodeEnabled = true;
-            _developmentVelocityEnabled = false;
-          });
-        }
-
-        if (stepNumber == 4) {
-          setState(() {
-            _beautifulUiEnabled = true;
-            _highQualityCodeEnabled = false;
             _developmentVelocityEnabled = true;
           });
         }
 
-        if (stepNumber == 5) {
+        if (stepNumber == 3) {
           setState(() {
             _beautifulUiEnabled = false;
             _highQualityCodeEnabled = true;
@@ -75,7 +59,7 @@ class _SwitchesState extends State<_Switches> {
           });
         }
 
-        if (stepNumber == 6) {
+        if (stepNumber == 4) {
           setState(() {
             _beautifulUiEnabled = true;
             _highQualityCodeEnabled = true;

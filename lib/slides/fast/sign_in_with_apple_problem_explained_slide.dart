@@ -1,11 +1,11 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class AppSubmissionSuccessfulSlide extends FlutterDeckSlideWidget {
-  const AppSubmissionSuccessfulSlide()
+class SignInWithAppleProblemExplainedSlide extends FlutterDeckSlideWidget {
+  const SignInWithAppleProblemExplainedSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
-            route: '/app-submission-successful',
+            route: '/sign-in-with-apple-problem-explained',
           ),
         );
 
@@ -13,7 +13,7 @@ class AppSubmissionSuccessfulSlide extends FlutterDeckSlideWidget {
   FlutterDeckSlide build(BuildContext context) {
     return FlutterDeckSlide.image(
       imageBuilder: (context) => Image.asset(
-        'assets/submission-successful.png',
+        'assets/sign-in-with-apple-problem-explained.png',
       ),
     );
   }
