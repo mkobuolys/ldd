@@ -12,7 +12,13 @@ class SlowAppReviewSlide extends FlutterDeckSlideWidget {
   @override
   FlutterDeckSlide build(BuildContext context) {
     return FlutterDeckSlide.image(
-      imageBuilder: (context) => Image.asset('assets/slow-app-review.png'),
+      imageBuilder: (context) => Image.asset(
+        'assets/slow-app-review.png',
+        frameBuilder: (context, child, _, __) => Transform.scale(
+          scale: 1.5,
+          child: child,
+        ),
+      ),
     );
   }
 }
