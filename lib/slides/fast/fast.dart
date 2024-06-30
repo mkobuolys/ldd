@@ -1,5 +1,7 @@
 import '../what_if_slide.dart';
 import 'app_submission_rejected_slide.dart';
+import 'bonus_story_section_slide.dart';
+import 'fake_door_intro_slide.dart';
 import 'fast_section_slide.dart';
 import 'fast_summary_slide.dart';
 import 'feature_flags_slide.dart';
@@ -13,14 +15,16 @@ import 'slow_app_review_slide.dart';
 final fastSectionSlides = [
   const FastSectionSlide(),
   WhatIfSlide('fast'),
+  const FakeDoorIntroSlide(),
+  const FeatureFlagsSlide(),
+  const FastSummarySlide(),
+  const BonusStorySectionSlide(),
   const SlowAppReviewSlide(),
   const AppSubmissionRejectedSlide(),
   const SignInWithAppleProblemSlide(),
   const SignInWithAppleProblemExplainedSlide(),
   const SessionReplaySlide(),
   WhatIfSlide('feature-flag'),
-  const FeatureFlagsSlide(),
   const FirebaseRemoteConfigFeatureFlagSlide(),
   const SignUpFormToggleSlide(),
-  const FastSummarySlide(),
 ];

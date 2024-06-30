@@ -16,11 +16,11 @@ class RiveIntroSlide extends FlutterDeckSlideWidget {
         child: Column(
           children: [
             Expanded(
-              flex: 2,
+              flex: 1,
               child: Image.asset('assets/rive-slogan.png'),
             ),
             Expanded(
-              flex: 5,
+              flex: 3,
               child: Image.asset('assets/rive-editor.png'),
             ),
           ],
