@@ -48,6 +48,7 @@ class _GameViewState extends State<_GameView> {
         ),
         Expanded(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Center(
                 child: ElevatedButton.icon(
@@ -57,7 +58,7 @@ class _GameViewState extends State<_GameView> {
                 ),
               ),
               const SizedBox(height: 16),
-              Expanded(child: Image.asset('assets/flappy-bird-code.png')),
+              Image.asset('assets/flappy-bird-code.png'),
             ],
           ),
         )

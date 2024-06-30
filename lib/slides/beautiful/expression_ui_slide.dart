@@ -28,16 +28,18 @@ class ExpressionUiSlide extends FlutterDeckSlideWidget {
             ),
           ),
           Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text('\u2022 Responsive', style: textStyle),
-                Text('\u2022 Scrollable', style: textStyle),
-                Text('\u2022 Composable', style: textStyle),
-                Text('\u2022 In-sync with data', style: textStyle),
-                Text('\u2022 ...', style: textStyle),
-              ],
+            child: Center(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Text('\u2022 Responsive', style: textStyle),
+                  Text('\u2022 Scrollable', style: textStyle),
+                  Text('\u2022 Composable', style: textStyle),
+                  Text('\u2022 In-sync with data', style: textStyle),
+                  Text('\u2022 ...', style: textStyle),
+                ],
+              ),
             ),
           ),
         ],
