@@ -6,16 +6,16 @@ class FeedbackSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/feedback',
+            header: FlutterDeckHeaderConfiguration(
+              title: 'Share your feedback 💙',
+            ),
           ),
         );
 
   @override
   FlutterDeckSlide build(BuildContext context) {
-    return FlutterDeckSlide.blank(
-      builder: (context) => const Placeholder(),
+    return FlutterDeckSlide.image(
+      imageBuilder: (context) => Image.asset('assets/feedback-qr-code.png'),
     );
-    // return FlutterDeckSlide.image(
-    //   imageBuilder: (context) => Image.asset('assets/'),
-    // );
   }
 }
