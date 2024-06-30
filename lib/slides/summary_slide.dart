@@ -13,7 +13,13 @@ class SummarySlide extends FlutterDeckSlideWidget {
   @override
   FlutterDeckSlide build(BuildContext context) {
     return FlutterDeckSlide.split(
-      leftBuilder: (context) => const Placeholder(),
+      leftBuilder: (context) => FlutterDeckBulletList(
+        items: const [
+          'Beautiful UI',
+          'High-quality code',
+          'Modern problems require modern solutions',
+        ],
+      ),
       rightBuilder: (context) => const Placeholder(),
     );
   }
