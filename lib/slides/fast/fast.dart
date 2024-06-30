@@ -11,11 +11,13 @@ import 'sign_in_with_apple_problem_explained_slide.dart';
 import 'sign_in_with_apple_problem_slide.dart';
 import 'sign_up_form_toggle_slide.dart';
 import 'slow_app_review_slide.dart';
+import 'spahetti_method_slide.dart';
 
 final fastSectionSlides = [
   const FastSectionSlide(),
   WhatIfSlide('fast'),
   const FakeDoorIntroSlide(),
+  const SpaghettiMethodSlide(),
   const FeatureFlagsSlide(),
   const FastSummarySlide(),
   const BonusStorySectionSlide(),
