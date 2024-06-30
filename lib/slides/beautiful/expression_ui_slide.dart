@@ -22,14 +22,12 @@ class ExpressionUiSlide extends FlutterDeckSlideWidget {
       builder: (context) => Row(
         children: [
           Expanded(
-            flex: 3,
             child: DeviceFrame(
               device: Devices.ios.iPhone13,
               screen: const ExpressionUIExampleApp(),
             ),
           ),
           Expanded(
-            flex: 2,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.center,

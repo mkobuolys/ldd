@@ -32,17 +32,6 @@ class _GameView extends StatefulWidget {
 class _GameViewState extends State<_GameView> {
   var _key = UniqueKey();
 
-  void _onRiveInit(Artboard artboard) {
-    final controller = StateMachineController.fromArtboard(
-      artboard,
-      'State Machine 1',
-    );
-
-    if (controller == null) return;
-
-    artboard.addController(controller);
-  }
-
   void _onRestart() => setState(() => _key = UniqueKey());
 
   @override
@@ -54,13 +43,7 @@ class _GameViewState extends State<_GameView> {
         Expanded(
           child: DeviceFrame(
             device: Devices.ios.iPhone13,
-            screen: RiveAnimation.asset(
-              key: _key,
-              'assets/rive/flappy-bird.riv',
-              artboard: '3',
-              placeHolder: const CircularProgressIndicator.adaptive(),
-              onInit: _onRiveInit,
-            ),
+            screen: _FlappyBird(key: _key),
           ),
         ),
         Expanded(
@@ -83,32 +66,16 @@ class _GameViewState extends State<_GameView> {
   }
 }
 
-class _FlappyBird extends StatefulWidget {
-  const _FlappyBird();
-
-  @override
-  State<_FlappyBird> createState() => _FlappyBirdState();
-}
-
-class _FlappyBirdState extends State<_FlappyBird> {
-  void _onRiveInit(Artboard artboard) {
-    final controller = StateMachineController.fromArtboard(
-      artboard,
-      'State Machine 1',
-    );
-
-    if (controller == null) return;
-
-    artboard.addController(controller);
-  }
+class _FlappyBird extends StatelessWidget {
+  const _FlappyBird({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return RiveAnimation.asset(
+    return const RiveAnimation.asset(
       'assets/rive/flappy-bird.riv',
       artboard: '3',
-      placeHolder: const CircularProgressIndicator.adaptive(),
-      onInit: _onRiveInit,
+      stateMachines: ['State Machine 1'],
+      placeHolder: CircularProgressIndicator.adaptive(),
     );
   }
 }
