@@ -1,6 +1,8 @@
 import '../what_if_slide.dart';
 import 'app_submission_rejected_slide.dart';
 import 'bonus_story_section_slide.dart';
+import 'fake_door_config_slide.dart';
+import 'fake_door_demo_slide.dart';
 import 'fake_door_intro_slide.dart';
 import 'fast_section_slide.dart';
 import 'fast_summary_slide.dart';
@@ -19,6 +21,8 @@ final fastSectionSlides = [
   const FakeDoorIntroSlide(),
   const SpaghettiMethodSlide(),
   const FeatureFlagsSlide(),
+  const FakeDoorConfigSlide(),
+  const FakeDoorDemoSlide(),
   const FastSummarySlide(),
   const BonusStorySectionSlide(),
   const SlowAppReviewSlide(),
