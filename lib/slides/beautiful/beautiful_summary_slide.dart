@@ -12,9 +12,7 @@ class BeautifulSummarySlide extends FlutterDeckSlideWidget {
   @override
   FlutterDeckSlide build(BuildContext context) {
     return FlutterDeckSlide.quote(
-      quote:
-          '"The fastest way to build beautiful UIs is to stop building them."',
-      attribution: '― Me, just now',
+      quote: '"If it works, don\'t touch it."',
     );
   }
 }
