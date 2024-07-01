@@ -6,16 +6,16 @@ class FastSummarySlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/fast-summary',
-            header: FlutterDeckHeaderConfiguration(
-              title: 'Fast product development* 🐱',
-            ),
           ),
         );
 
   @override
   FlutterDeckSlide build(BuildContext context) {
-    return FlutterDeckSlide.blank(
-      builder: (context) => const Placeholder(),
+    return FlutterDeckSlide.quote(
+      // quote: '"Before software can be reusable it first has to be usable."',
+      quote: '"The older I get, the more I believe that the only way to become '
+          'a better programmer is by not programming."',
+      attribution: '― Jeff Atwood',
     );
   }
 }

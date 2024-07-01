@@ -70,7 +70,7 @@ class _FeatureComingSoonDialog extends StatelessWidget {
       content: Text(
         'The export to PDF feature is still in development.\n'
         'We will notify you once it is ready. 🚀',
-        style: textTheme.bodyLarge,
+        style: textTheme.bodyMedium,
       ),
       actions: <Widget>[
         TextButton(

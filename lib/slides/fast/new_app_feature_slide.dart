@@ -1,11 +1,11 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class FakeDoorIntroSlide extends FlutterDeckSlideWidget {
-  const FakeDoorIntroSlide()
+class NewAppFeatureSlide extends FlutterDeckSlideWidget {
+  const NewAppFeatureSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
-            route: '/fake-door-intro',
+            route: '/new-app-feature',
           ),
         );
 
@@ -13,13 +13,12 @@ class FakeDoorIntroSlide extends FlutterDeckSlideWidget {
   FlutterDeckSlide build(BuildContext context) {
     return FlutterDeckSlide.image(
       imageBuilder: (context) => Image.asset(
-        'assets/fake-door-explained.png',
+        'assets/new-feature-meme.png',
         frameBuilder: (context, child, _, __) => Transform.scale(
           scale: 2,
           child: child,
         ),
       ),
-      label: 'https://keyua.org/blog/types-of-minimum-viable-product/',
     );
   }
 }

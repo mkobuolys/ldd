@@ -6,20 +6,15 @@ class BeautifulSummarySlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/beautiful-summary',
-            header: FlutterDeckHeaderConfiguration(title: 'Beautiful UI* 🐱'),
           ),
         );
 
   @override
   FlutterDeckSlide build(BuildContext context) {
-    return FlutterDeckSlide.blank(
-      builder: (context) => FlutterDeckBulletList(
-        items: const [
-          'Not very accessible',
-          'Workarounds go brrr 🚀',
-          "You (probably) can't change it",
-        ],
-      ),
+    return FlutterDeckSlide.quote(
+      quote:
+          '"The fastest way to build beautiful UIs is to stop building them."',
+      attribution: '― Me, just now',
     );
   }
 }
