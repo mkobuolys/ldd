@@ -25,7 +25,7 @@ class AppDevelopmentFlowSlide extends FlutterDeckSlideWidget {
             ),
             const SizedBox(height: 128),
             Text(
-              '🦄💻🕒  →  📱',
+              '🦄💻🕑🕑  →  📱',
               style: FlutterDeckTheme.of(context)
                   .textTheme
                   .display
