@@ -44,6 +44,7 @@ class _FlutterDeckState extends State<_FlutterDeck> {
           aspectRatio: const FlutterDeckAspectRatio.ratio16x10(),
           resolution: const FlutterDeckResolution.fhd(),
         ),
+        transition: const FlutterDeckTransition.fade(),
       ),
       slides: [
         const TitleSlide(),
