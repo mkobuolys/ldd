@@ -18,7 +18,7 @@ class WhatIfSlide extends FlutterDeckSlideWidget {
           Center(
             child: Text(
               'What if...?',
-              style: FlutterDeckTheme.of(context).textTheme.display,
+              style: FlutterDeckBigFactSlideTheme.of(context).titleTextStyle,
             ),
           ),
         ],

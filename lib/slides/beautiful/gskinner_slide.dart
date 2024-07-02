@@ -31,8 +31,13 @@ class GskinnerSlide extends FlutterDeckSlideWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisSize: MainAxisSize.min,
               children: [
-                Padding(
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(16),
+                  ),
                   padding: const EdgeInsets.all(16.0),
                   child: Image.asset('assets/gskinner-logo.png', width: 500),
                 ),

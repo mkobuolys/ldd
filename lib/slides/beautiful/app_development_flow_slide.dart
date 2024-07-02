@@ -18,12 +18,18 @@ class AppDevelopmentFlowSlide extends FlutterDeckSlideWidget {
           children: [
             Text(
               '🧑‍🎨🕑  →  👨‍💻🕑  →  📱',
-              style: FlutterDeckTheme.of(context).textTheme.display,
+              style: FlutterDeckTheme.of(context)
+                  .textTheme
+                  .display
+                  .copyWith(height: 1.0),
             ),
             const SizedBox(height: 128),
             Text(
               '🦄💻🕒  →  📱',
-              style: FlutterDeckTheme.of(context).textTheme.display,
+              style: FlutterDeckTheme.of(context)
+                  .textTheme
+                  .display
+                  .copyWith(height: 1.0),
             ),
           ],
         ),

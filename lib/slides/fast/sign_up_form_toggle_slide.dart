@@ -21,46 +21,60 @@ class SignUpFormToggleSlide extends FlutterDeckSlideWidget {
   @override
   FlutterDeckSlide build(BuildContext context) {
     return FlutterDeckSlide.blank(
-      builder: (context) => FlutterDeckSlideStepsBuilder(
-        builder: (context, step) => Stack(
-          children: [
-            Row(
-              children: [
-                Expanded(
-                  flex: 2,
-                  child: Image.asset(
-                    step > 1 && step < 5
-                        ? 'assets/sign-up-no-name.png'
-                        : 'assets/sign-up-name-empty.png',
+      builder: (context) => FlutterDeckSlideStepsListener(
+        listener: (context, step) => step == 4
+            ? showDialog(
+                context: context,
+                builder: (context) => Center(
+                  child: Padding(
+                    padding: const EdgeInsets.all(32),
+                    child: Image.asset('assets/submission-successful.png'),
                   ),
                 ),
-                Expanded(
-                  flex: 3,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      for (final (index, item) in _steps.indexed)
-                        Opacity(
-                          opacity: step >= index + 1 ? 1 : 0,
-                          child: Text(
-                            '${index + 1}. $item',
-                            style: FlutterDeckTheme.of(context).textTheme.title,
+              )
+            : Navigator.maybePop(context),
+        child: FlutterDeckSlideStepsBuilder(
+          builder: (context, step) => Stack(
+            children: [
+              Row(
+                children: [
+                  Expanded(
+                    flex: 2,
+                    child: Image.asset(
+                      step > 1 && step < 5
+                          ? 'assets/sign-up-no-name.png'
+                          : 'assets/sign-up-name-empty.png',
+                    ),
+                  ),
+                  Expanded(
+                    flex: 3,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        for (final (index, item) in _steps.indexed)
+                          Opacity(
+                            opacity: step >= index + 1 ? 1 : 0,
+                            child: Text(
+                              '${index + 1}. $item',
+                              style:
+                                  FlutterDeckTheme.of(context).textTheme.title,
+                            ),
                           ),
-                        ),
-                    ],
+                      ],
+                    ),
                   ),
-                ),
-              ],
-            ),
-            if (step == 4)
-              ColoredBox(
-                color: Colors.black.withOpacity(0.8),
-                child: Center(
-                  child: Image.asset('assets/submission-successful.png'),
-                ),
+                ],
               ),
-          ],
+              // if (step == 4)
+              //   ColoredBox(
+              //     color: Colors.black.withOpacity(0.8),
+              //     child: Center(
+              //       child: Image.asset('assets/submission-successful.png'),
+              //     ),
+              //   ),
+            ],
+          ),
         ),
       ),
     );

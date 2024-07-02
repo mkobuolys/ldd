@@ -12,7 +12,7 @@ class PresentationLinkSlide extends FlutterDeckSlideWidget {
   @override
   FlutterDeckSlide build(BuildContext context) {
     return FlutterDeckSlide.bigFact(
-      title: 'kazlauskas.dev/ldd',
+      title: 'https://kazlauskas.dev/ldd',
     );
   }
 }

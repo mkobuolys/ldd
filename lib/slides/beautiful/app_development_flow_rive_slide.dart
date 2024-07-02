@@ -19,7 +19,10 @@ class AppDevelopmentFlowRiveSlide extends FlutterDeckSlideWidget {
           Center(
             child: Text(
               '🧑‍🎨🕑  →  🐱💤  →  📱',
-              style: FlutterDeckTheme.of(context).textTheme.display,
+              style: FlutterDeckTheme.of(context)
+                  .textTheme
+                  .display
+                  .copyWith(height: 1.0),
             ),
           ),
         ],

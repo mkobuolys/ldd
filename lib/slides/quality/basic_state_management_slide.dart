@@ -16,9 +16,9 @@ class BasicStateManagementSlide extends FlutterDeckSlideWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const _ProgressButton(),
-            const SizedBox(height: 32),
             Image.asset('assets/state-management-basic.png'),
+            const SizedBox(height: 32),
+            const _ProgressButton(),
           ],
         ),
       ),

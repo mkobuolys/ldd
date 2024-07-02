@@ -1,20 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-const _speakerNotes = '''
-- Beautiful UI
-- High-quality code
-- Fast product development
-
-Pick two
-''';
+import '../widgets/background_card.dart';
 
 class CatDeveloperQualitiesSlide extends FlutterDeckSlideWidget {
   const CatDeveloperQualitiesSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/cat-developer-qualities',
-            speakerNotes: _speakerNotes,
             steps: 3,
           ),
         );
@@ -59,10 +52,10 @@ class _SwitchesState extends State<_Switches> {
         }
       },
       child: Center(
-        child: FractionallySizedBox(
-          widthFactor: 0.9,
+        child: BackgroundCard(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisSize: MainAxisSize.min,
             children: [
               _Switch(
                 label: getLabel('Beautiful UI'),
