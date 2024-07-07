@@ -16,7 +16,13 @@ class FakeDoorConfigSlide extends FlutterDeckSlideWidget {
         children: [
           Expanded(
             flex: 1,
-            child: Image.asset('assets/firebase-remote-config-logo.png'),
+            child: Image.asset(
+              'assets/firebase-remote-config-logo.png',
+              frameBuilder: (context, child, _, __) => Transform.scale(
+                scale: 2,
+                child: child,
+              ),
+            ),
           ),
           Expanded(
             flex: 2,
