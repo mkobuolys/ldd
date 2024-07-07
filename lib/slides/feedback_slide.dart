@@ -9,6 +9,7 @@ class FeedbackSlide extends FlutterDeckSlideWidget {
             header: FlutterDeckHeaderConfiguration(
               title: 'Share your feedback 💙',
             ),
+            hidden: true,
           ),
         );
 
