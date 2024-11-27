@@ -1,6 +1,7 @@
 import '../what_if_slide.dart';
 import 'basic_state_management_slide.dart';
 import 'five_nines_availability_slide.dart';
+import 'flutter_optimistic_state_docs_slide.dart';
 import 'optimistic/optimistic.dart';
 import 'quality_section_slide.dart';
 import 'quality_summary_slide.dart';
@@ -18,5 +19,6 @@ final qualitySectionSlides = [
   const OptimisticTodoAppDemoSlide(),
   const TodoAppCodeSlide(),
   const ReactUseOptimisticSlide(),
+  const FlutterOptimisticStateDocsSlide(),
   const QualitySummarySlide(),
 ];
