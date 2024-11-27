@@ -6,7 +6,7 @@ import 'package:flutter_deck/flutter_deck.dart';
 import 'cubit/favorite_button_cubit.dart';
 
 class OptimisticStateDemoSlide extends FlutterDeckSlideWidget {
-  const OptimisticStateDemoSlide()
+  const OptimisticStateDemoSlide({super.key})
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/optimistic-state-demo',

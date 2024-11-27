@@ -2,7 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
 class QualitySummarySlide extends FlutterDeckSlideWidget {
-  const QualitySummarySlide()
+  const QualitySummarySlide({super.key})
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/quality-summary',

@@ -4,7 +4,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
 class ExpressionUiSlide extends FlutterDeckSlideWidget {
-  const ExpressionUiSlide()
+  const ExpressionUiSlide({super.key})
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/expression-ui',

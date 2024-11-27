@@ -6,7 +6,7 @@ import 'package:stacked/stacked.dart';
 import 'theme_view_model.dart';
 
 class ThemeView extends StackedView<ThemeViewModel> {
-  const ThemeView({Key? key}) : super(key: key);
+  const ThemeView({super.key});
 
   @override
   Widget builder(

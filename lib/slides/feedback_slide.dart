@@ -2,7 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
 class FeedbackSlide extends FlutterDeckSlideWidget {
-  const FeedbackSlide()
+  const FeedbackSlide({super.key})
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/feedback',

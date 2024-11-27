@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
 class BasicStateManagementSlide extends FlutterDeckSlideWidget {
-  const BasicStateManagementSlide()
+  const BasicStateManagementSlide({super.key})
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/basic-state-management',

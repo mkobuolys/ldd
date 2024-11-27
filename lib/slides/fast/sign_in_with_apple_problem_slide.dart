@@ -2,7 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
 class SignInWithAppleProblemSlide extends FlutterDeckSlideWidget {
-  const SignInWithAppleProblemSlide()
+  const SignInWithAppleProblemSlide({super.key})
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/sign-in-with-apple-problem',
@@ -18,7 +18,7 @@ class SignInWithAppleProblemSlide extends FlutterDeckSlideWidget {
             child: Column(
               children: [
                 Text(
-                  'iPhone app review',
+                  'App review #1',
                   style: FlutterDeckTheme.of(context).textTheme.title,
                 ),
                 Expanded(
@@ -49,7 +49,7 @@ class SignInWithAppleProblemSlide extends FlutterDeckSlideWidget {
             child: Column(
               children: [
                 Text(
-                  'iPad app review',
+                  'App review #2',
                   style: FlutterDeckTheme.of(context).textTheme.title,
                 ),
                 Expanded(

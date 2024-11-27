@@ -141,7 +141,7 @@ class _DigitalWalletViewState extends State<DigitalWalletView> {
 }
 
 class _Card extends StatelessWidget {
-  const _Card(this.account, {Key? key}) : super(key: key);
+  const _Card(this.account);
 
   final _AccountData account;
 

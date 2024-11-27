@@ -201,7 +201,7 @@ class _CardDeckViewState extends State<CardDeckView> {
 }
 
 class _Card extends StatelessWidget {
-  const _Card(this.index, {Key? key}) : super(key: key);
+  const _Card(this.index);
 
   final int index;
 

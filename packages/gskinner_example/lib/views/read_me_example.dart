@@ -189,8 +189,7 @@ class _ReadMeExampleState extends State<ReadMeExample> {
 }
 
 class _ContentCard extends StatelessWidget {
-  const _ContentCard(this.index, this.selected, this.settled, {Key? key})
-      : super(key: key);
+  const _ContentCard(this.index, this.selected, this.settled);
 
   final int index;
   final bool selected;

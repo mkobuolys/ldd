@@ -2,7 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
 class SlowAppReviewSlide extends FlutterDeckSlideWidget {
-  const SlowAppReviewSlide()
+  const SlowAppReviewSlide({super.key})
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/slow-app-review',

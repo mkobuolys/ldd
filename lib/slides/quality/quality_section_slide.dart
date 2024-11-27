@@ -2,7 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
 class QualitySectionSlide extends FlutterDeckSlideWidget {
-  const QualitySectionSlide()
+  const QualitySectionSlide({super.key})
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/quality-section',

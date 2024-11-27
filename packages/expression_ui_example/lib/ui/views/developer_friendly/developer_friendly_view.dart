@@ -6,7 +6,7 @@ import 'package:stacked/stacked.dart';
 import 'developer_friendly_viewmodel.dart';
 
 class DeveloperFriendlyView extends StackedView<DeveloperFriendlyViewModel> {
-  const DeveloperFriendlyView({Key? key}) : super(key: key);
+  const DeveloperFriendlyView({super.key});
 
   @override
   Widget builder(

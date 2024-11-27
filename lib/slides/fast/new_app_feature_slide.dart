@@ -2,7 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
 class NewAppFeatureSlide extends FlutterDeckSlideWidget {
-  const NewAppFeatureSlide()
+  const NewAppFeatureSlide({super.key})
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/new-app-feature',

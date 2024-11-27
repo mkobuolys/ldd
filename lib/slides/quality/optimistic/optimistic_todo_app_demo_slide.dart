@@ -4,7 +4,7 @@ import 'package:flutter_deck/flutter_deck.dart';
 import 'package:optimistic_todo_app/app.dart';
 
 class OptimisticTodoAppDemoSlide extends FlutterDeckSlideWidget {
-  const OptimisticTodoAppDemoSlide()
+  const OptimisticTodoAppDemoSlide({super.key})
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/optimistic-todo-app-demo',

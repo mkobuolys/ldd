@@ -4,7 +4,7 @@ import 'package:flutter_deck/flutter_deck.dart';
 import 'package:gskinner_example/gskinner_example.dart';
 
 class GskinnerSlide extends FlutterDeckSlideWidget {
-  const GskinnerSlide()
+  const GskinnerSlide({super.key})
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/gskinner',

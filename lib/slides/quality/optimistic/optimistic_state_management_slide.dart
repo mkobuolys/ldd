@@ -2,7 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
 class OptimisticStateManagementSlide extends FlutterDeckSlideWidget {
-  const OptimisticStateManagementSlide()
+  const OptimisticStateManagementSlide({super.key})
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/optimistic-state-management',

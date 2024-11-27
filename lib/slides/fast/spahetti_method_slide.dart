@@ -2,7 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
 class SpaghettiMethodSlide extends FlutterDeckSlideWidget {
-  const SpaghettiMethodSlide()
+  const SpaghettiMethodSlide({super.key})
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/spaghetti-method',

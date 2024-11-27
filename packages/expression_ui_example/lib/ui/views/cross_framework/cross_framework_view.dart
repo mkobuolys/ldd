@@ -6,7 +6,7 @@ import 'package:stacked/stacked.dart';
 import 'cross_framework_viewmodel.dart';
 
 class CrossFrameworkView extends StackedView<CrossFrameworkViewModel> {
-  const CrossFrameworkView({Key? key}) : super(key: key);
+  const CrossFrameworkView({super.key});
 
   @override
   Widget builder(

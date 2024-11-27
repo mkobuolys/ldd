@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-import '../theme.dart';
-
 class TitleSlide extends FlutterDeckSlideWidget {
-  const TitleSlide()
+  const TitleSlide({super.key})
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/title',
@@ -14,32 +12,19 @@ class TitleSlide extends FlutterDeckSlideWidget {
 
   @override
   FlutterDeckSlide build(BuildContext context) {
-    final theme = FlutterDeckTheme.of(context);
-    final color = Theme.of(context).brightness == Brightness.light
-        ? PresentationTheme.primaryColor
-        : theme.materialTheme.colorScheme.onSurface;
-
     return FlutterDeckSlide.blank(
       builder: (context) => Center(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
+            const Text(
               'Cat-like Development 🐱',
-              style: TextStyle(
-                color: color,
-                fontSize: 96,
-                fontWeight: FontWeight.bold,
-              ),
+              style: TextStyle(fontSize: 96, fontWeight: FontWeight.bold),
             ),
-            Text(
+            const Text(
               'Flutter for Efficiency',
-              style: TextStyle(
-                color: color,
-                fontSize: 80,
-                height: 1.0,
-              ),
+              style: TextStyle(fontSize: 80, height: 1.0),
             ),
             const SizedBox(height: 64),
             FlutterDeckSpeakerInfoWidget(

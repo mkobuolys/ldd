@@ -4,7 +4,7 @@ import 'package:flutter_deck/flutter_deck.dart';
 import '../widgets/background_card.dart';
 
 class PresentationContentWarningSlide extends FlutterDeckSlideWidget {
-  const PresentationContentWarningSlide()
+  const PresentationContentWarningSlide({super.key})
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/presentation-content-warning',

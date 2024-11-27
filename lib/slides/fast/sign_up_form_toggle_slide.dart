@@ -10,7 +10,7 @@ const _steps = [
 ];
 
 class SignUpFormToggleSlide extends FlutterDeckSlideWidget {
-  const SignUpFormToggleSlide()
+  const SignUpFormToggleSlide({super.key})
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/sign-up-form-toggle',

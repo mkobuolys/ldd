@@ -4,7 +4,7 @@ import 'package:flutter_deck/flutter_deck.dart';
 import '../widgets/background_card.dart';
 
 class CatDeveloperQualitiesSlide extends FlutterDeckSlideWidget {
-  const CatDeveloperQualitiesSlide()
+  const CatDeveloperQualitiesSlide({super.key})
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/cat-developer-qualities',

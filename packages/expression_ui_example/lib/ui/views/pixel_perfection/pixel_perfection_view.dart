@@ -6,7 +6,7 @@ import 'package:stacked/stacked.dart';
 import 'pixel_perfection_viewmodel.dart';
 
 class PixelPerfectionView extends StackedView<PixelPerfectionViewModel> {
-  const PixelPerfectionView({Key? key}) : super(key: key);
+  const PixelPerfectionView({super.key});
 
   @override
   Widget builder(

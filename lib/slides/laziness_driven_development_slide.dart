@@ -2,7 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
 class LazinessDrivenDevelopmentSlide extends FlutterDeckSlideWidget {
-  const LazinessDrivenDevelopmentSlide()
+  const LazinessDrivenDevelopmentSlide({super.key})
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/laziness-driven-development',

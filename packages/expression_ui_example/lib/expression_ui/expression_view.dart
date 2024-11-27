@@ -30,7 +30,7 @@ class ExpressionView extends StatelessWidget {
   final BoxFit fit;
 
   const ExpressionView({
-    Key? key,
+    super.key,
     required this.artboardName,
     required this.onEvent,
     this.scrollable = false,
@@ -38,7 +38,7 @@ class ExpressionView extends StatelessWidget {
     this.controller,
     this.fit = BoxFit.cover,
     this.useArtboardSize = true,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

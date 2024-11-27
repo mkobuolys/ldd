@@ -4,7 +4,7 @@ import 'package:stacked/stacked.dart';
 import 'onboarding_details_viewmodel.dart';
 
 class OnboardingDetailsView extends StackedView<OnboardingDetailsViewModel> {
-  const OnboardingDetailsView({Key? key}) : super(key: key);
+  const OnboardingDetailsView({super.key});
 
   @override
   Widget builder(

@@ -2,7 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
 class CatDeveloperSlide extends FlutterDeckSlideWidget {
-  const CatDeveloperSlide()
+  const CatDeveloperSlide({super.key})
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/cat-developer',

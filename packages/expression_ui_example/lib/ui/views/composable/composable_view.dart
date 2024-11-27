@@ -6,7 +6,7 @@ import 'package:stacked/stacked.dart';
 import 'composable_viewmodel.dart';
 
 class ComposableView extends StackedView<ComposableViewModel> {
-  const ComposableView({Key? key}) : super(key: key);
+  const ComposableView({super.key});
 
   @override
   Widget builder(

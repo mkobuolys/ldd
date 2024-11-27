@@ -2,7 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
 class WhatIfSlide extends FlutterDeckSlideWidget {
-  WhatIfSlide(String routeContext)
+  WhatIfSlide(String routeContext, {super.key})
       : super(
           configuration: FlutterDeckSlideConfiguration(
             route: '/what-if-$routeContext',

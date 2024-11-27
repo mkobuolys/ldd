@@ -4,7 +4,7 @@ import 'package:flutter_deck/flutter_deck.dart';
 import '../../widgets/background_card.dart';
 
 class StateManagementSlide extends FlutterDeckSlideWidget {
-  const StateManagementSlide()
+  const StateManagementSlide({super.key})
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/state-management',
@@ -21,7 +21,7 @@ class StateManagementSlide extends FlutterDeckSlideWidget {
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(
-                'POV: Talking about state management in Flutter',
+                'POV: Talking about state management in app development',
                 style: FlutterDeckTheme.of(context).textTheme.header,
               ),
               const SizedBox(height: 32),

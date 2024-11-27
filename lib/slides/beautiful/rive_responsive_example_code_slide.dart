@@ -2,10 +2,11 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
 class RiveResponsiveExampleCodeSlide extends FlutterDeckSlideWidget {
-  const RiveResponsiveExampleCodeSlide()
+  const RiveResponsiveExampleCodeSlide({super.key})
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/rive-responsive-example-code',
+            hidden: true,
           ),
         );
 

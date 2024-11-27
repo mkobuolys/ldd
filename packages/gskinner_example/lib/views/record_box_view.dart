@@ -56,7 +56,7 @@ class RecordBoxView extends StatelessWidget {
 }
 
 class _Card extends StatelessWidget {
-  const _Card(this.index, {Key? key}) : super(key: key);
+  const _Card(this.index);
   final int index;
 
   @override

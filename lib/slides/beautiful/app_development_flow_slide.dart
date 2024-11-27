@@ -2,7 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
 class AppDevelopmentFlowSlide extends FlutterDeckSlideWidget {
-  const AppDevelopmentFlowSlide()
+  const AppDevelopmentFlowSlide({super.key})
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/app-development-flow',

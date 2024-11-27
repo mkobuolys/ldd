@@ -31,14 +31,19 @@ class _FlutterDeckState extends State<_FlutterDeck> {
     return FlutterDeckApp(
       configuration: FlutterDeckConfiguration(
         background: FlutterDeckBackgroundConfiguration(
-          light: FlutterDeckBackground.image(
-            Image.asset('assets/background.png', fit: BoxFit.cover),
+          light: FlutterDeckBackground.gradient(
+            RadialGradient(
+              colors: [
+                PresentationTheme.primaryColor.withOpacity(0.05),
+                PresentationTheme.primaryColor.withOpacity(0.1),
+                PresentationTheme.primaryColor.withOpacity(0.15),
+              ],
+            ),
           ),
         ),
         footer: const FlutterDeckFooterConfiguration(
           showSlideNumbers: true,
           showSocialHandle: true,
-          widget: _SocialHandle(),
         ),
         slideSize: FlutterDeckSlideSize.fromAspectRatio(
           aspectRatio: const FlutterDeckAspectRatio.ratio16x10(),
@@ -67,6 +72,7 @@ class _FlutterDeckState extends State<_FlutterDeck> {
         socialHandle: '@mkobuolys | kazlauskas.dev',
         imagePath: 'assets/speaker.png',
       ),
+      darkTheme: PresentationTheme.darkTheme,
       lightTheme: PresentationTheme.lightTheme,
     );
   }
@@ -77,31 +83,4 @@ Future<void> _setupExpressionUIExample() async {
 
   setupDialogUi();
   setupBottomSheetUi();
-}
-
-class _SocialHandle extends StatelessWidget {
-  const _SocialHandle();
-
-  @override
-  Widget build(BuildContext context) {
-    final socialHandle = context.flutterDeck.speakerInfo!.socialHandle;
-    final style = FlutterDeckFooterTheme.of(context)
-        .socialHandleTextStyle
-        ?.copyWith(fontWeight: FontWeight.bold);
-    Widget widget = Text(socialHandle, style: style);
-
-    if (Theme.of(context).brightness == Brightness.light) {
-      widget = Container(
-        padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-        decoration: BoxDecoration(
-          border: Border.all(color: PresentationTheme.primaryColor, width: 4),
-          borderRadius: BorderRadius.circular(32),
-          color: Colors.white,
-        ),
-        child: widget,
-      );
-    }
-
-    return widget;
-  }
 }

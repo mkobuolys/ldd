@@ -2,7 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
 class TodoAppCodeSlide extends FlutterDeckSlideWidget {
-  const TodoAppCodeSlide()
+  const TodoAppCodeSlide({super.key})
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/todo-app-code',

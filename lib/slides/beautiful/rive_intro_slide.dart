@@ -2,7 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
 class RiveIntroSlide extends FlutterDeckSlideWidget {
-  const RiveIntroSlide()
+  const RiveIntroSlide({super.key})
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/rive-intro',

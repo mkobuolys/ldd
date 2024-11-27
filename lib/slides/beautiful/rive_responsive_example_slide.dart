@@ -5,7 +5,7 @@ import 'package:rive/rive.dart';
 const _defaultWidth = 1500.0;
 
 class RiveResponsiveExampleSlide extends FlutterDeckSlideWidget {
-  const RiveResponsiveExampleSlide()
+  const RiveResponsiveExampleSlide({super.key})
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/rive-responsive-example',

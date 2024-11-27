@@ -4,7 +4,7 @@ import 'package:flutter_deck/flutter_deck.dart';
 import '../widgets/background_card.dart';
 
 class UnicornDeveloperQualitiesSlide extends FlutterDeckSlideWidget {
-  const UnicornDeveloperQualitiesSlide()
+  const UnicornDeveloperQualitiesSlide({super.key})
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/unicorn-developer-qualities',

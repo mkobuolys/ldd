@@ -2,7 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
 class SuspiciousFeatureSlide extends FlutterDeckSlideWidget {
-  const SuspiciousFeatureSlide()
+  const SuspiciousFeatureSlide({super.key})
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/suspicious-feature',

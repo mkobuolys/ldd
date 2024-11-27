@@ -4,7 +4,7 @@ import 'package:flutter_deck/flutter_deck.dart';
 import '../theme.dart';
 
 class ThankYouSlide extends FlutterDeckSlideWidget {
-  const ThankYouSlide()
+  const ThankYouSlide({super.key})
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/thank-you',

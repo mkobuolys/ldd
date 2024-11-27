@@ -61,7 +61,7 @@ class _HomeViewState extends State<HomeView> {
             .blurXY(delay: 0.ms, duration: 100.ms, begin: 8)
             .blurXY(delay: 100.ms, end: 8)
             .slideY(delay: 0.ms, duration: 200.ms, begin: -3, end: 3)
-            .flipH(begin: -0.3, end: 0.3),
+            .shakeX(amount: 5, hz: 15),
       ),
       onSettledItemChanged: (i) => setState(() => _activeIndex = i),
       children: items,
@@ -71,10 +71,10 @@ class _HomeViewState extends State<HomeView> {
 
 class _ExampleCard extends StatelessWidget {
   const _ExampleCard({
-    Key? key,
+    super.key,
     required this.example,
     this.selected = false,
-  }) : super(key: key);
+  });
 
   final _ExampleData example;
   final bool selected;

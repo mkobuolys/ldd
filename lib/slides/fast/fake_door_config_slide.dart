@@ -2,7 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
 class FakeDoorConfigSlide extends FlutterDeckSlideWidget {
-  const FakeDoorConfigSlide()
+  const FakeDoorConfigSlide({super.key})
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/fake-door-config',

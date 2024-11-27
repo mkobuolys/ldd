@@ -2,7 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
 class FeatureFlagsSlide extends FlutterDeckSlideWidget {
-  const FeatureFlagsSlide()
+  const FeatureFlagsSlide({super.key})
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/feature-flags',
