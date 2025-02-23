@@ -133,7 +133,7 @@ class _DigitalWalletViewState extends State<DigitalWalletView> {
       width: width,
       height: height,
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(opacity),
+        color: Colors.white.withValues(alpha: opacity),
         borderRadius: BorderRadius.circular(6),
       ),
     );

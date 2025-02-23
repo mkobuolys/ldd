@@ -130,7 +130,7 @@ class _CardDeckViewState extends State<CardDeckView> {
                 offset: Offset(0, 0),
               ),
               end: BoxShadow(
-                color: Colors.black.withOpacity(0),
+                color: Colors.black.withValues(alpha: 0),
                 blurRadius: 24,
                 offset: const Offset(-48, 0),
               ),

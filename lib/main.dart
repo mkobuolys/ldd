@@ -34,9 +34,9 @@ class _FlutterDeckState extends State<_FlutterDeck> {
           light: FlutterDeckBackground.gradient(
             RadialGradient(
               colors: [
-                PresentationTheme.primaryColor.withOpacity(0.05),
-                PresentationTheme.primaryColor.withOpacity(0.1),
-                PresentationTheme.primaryColor.withOpacity(0.15),
+                PresentationTheme.primaryColor.withValues(alpha: 0.05),
+                PresentationTheme.primaryColor.withValues(alpha: 0.1),
+                PresentationTheme.primaryColor.withValues(alpha: 0.15),
               ],
             ),
           ),
