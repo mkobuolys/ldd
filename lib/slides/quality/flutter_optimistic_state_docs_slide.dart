@@ -15,7 +15,8 @@ class FlutterOptimisticStateDocsSlide extends FlutterDeckSlideWidget {
       imageBuilder: (context) => Image.asset(
         'assets/flutter-optimistic-state-docs.png',
       ),
-      label: 'https://docs.flutter.dev/cookbook/architecture/optimistic-state',
+      label:
+          'https://docs.flutter.dev/app-architecture/design-patterns/optimistic-state',
     );
   }
 }
