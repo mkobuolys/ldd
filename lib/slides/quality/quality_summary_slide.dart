@@ -6,6 +6,7 @@ class QualitySummarySlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/quality-summary',
+            hidden: true,
           ),
         );
 

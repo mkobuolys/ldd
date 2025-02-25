@@ -6,6 +6,7 @@ class BeautifulSummarySlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/beautiful-summary',
+            hidden: true,
           ),
         );
 

@@ -6,6 +6,7 @@ class FastSummarySlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/fast-summary',
+            hidden: true,
           ),
         );
 
